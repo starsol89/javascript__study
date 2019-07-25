@@ -65,4 +65,28 @@ console.log('Im Working. Im JS. Im Beautiful. Im worth it');
    결과는 let을 쓴 것과 같다.
 
    결과적으로 let과 conts를 많이 쓰기 때문에 var 보다 비중이 높다.
+   
+   대체적으로 변수를 사용할때 const를 사용하고 진짜 필요할때만 let을 사용하자.
+*/
+
+/*
+    Data Types on JS
+    
+    첫번째는 String
+    const what = "youngchul"
+    결과: youngchul
+
+    두번째는 Boolean (True or False)
+    바이너리 세계에선(이진법) 모든 것은 0 or 1 이다.
+    즉, true는 1, false는 0 이다.
+    true와 false는 절대 텍스트가 아니라는 것.
+
+    세번째는 number
+    const wat = 777;
+    float도 알아보면 일단 숫자이며, floating number(떠돌이 소숫점)를 가지고 있다.
+    const wat = 55.1; ---> 여기서 00.1에 해당하는 것이 떠돌이 소숫점이 있는 것이다.
+
+    이 위에 것들을 외우려는 노력은 필요없다. 자연스럽게 코딩을 해나가다 보면 많이 쓰이기에 금방 터득한다.
+    다만 사용하는게 어떤 타입인지 인지하는게 중요하다.
+
 */
