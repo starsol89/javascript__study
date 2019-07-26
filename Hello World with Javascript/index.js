@@ -90,3 +90,32 @@ console.log('Im Working. Im JS. Im Beautiful. Im worth it');
     다만 사용하는게 어떤 타입인지 인지하는게 중요하다.
 
 */
+
+/*
+    Orhanizing Data with Arrays
+
+    Array - 데이터를 저장하는 곳이며, 리스트 같이 저장하는 방식이다. 예를들어 우리가 요일을 정리한다고 했을때 밑에 처럼
+    * daysOfWeek 이 단어에서 우리는 대소문자로 구분 된 것을 확인 할 수 있다. 이걸 camel case라고 하며 이건 변수명을 언제나 소문자로 시작해서 변수명 중간에 스페이스가 필요하다면 스페이스 대신 대문자로 이용해서 써준다.
+      왜냐하면 javascript에서는 스페이스를 쓸 수 없기 때문이다.
+    
+      const monday = "Mon";
+      const tue = "Tue";
+      const wed = "wed";
+      const thu = "Thu";
+      const fri = "Fri";
+
+      console.log(monday, tue, wed, thu, fri);
+
+      이 코드는 전혀 효과적이지 않다. 우리는 이걸 하나로 묶을 수 있다. 그것을 Array라고 부른다.
+      Array는 여러 string들을 하나로 묶는 것.
+
+      [] ---> 저 괄호가 Array다.
+      const daysOfWeek = ["Mon", "Tue", "Wed", "Thu", "Fri", "Sat", "Sun"];
+      
+      console.log(dayOfWeek);
+
+      Array는 규칙을 가지고 있다. 예를 들면 난 Array 3번째 요일을 알고 싶어! 라고 했을때, 
+      console.log(daysOfWeek[2]);
+      라고 실행하면 된다. 결과는 Wed 나오는데 여기서 사람이 새는 숫자와 컴퓨터가 인식하는 숫자가 다르단걸 알수있다.
+      컴퓨터는 0 부터 시작해서 숫자를 새어나가기 시작한다. 즉, 0,1,2,3 이런식이다.
+*/
