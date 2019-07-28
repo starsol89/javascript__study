@@ -119,3 +119,55 @@ console.log('Im Working. Im JS. Im Beautiful. Im worth it');
       라고 실행하면 된다. 결과는 Wed 나오는데 여기서 사람이 새는 숫자와 컴퓨터가 인식하는 숫자가 다르단걸 알수있다.
       컴퓨터는 0 부터 시작해서 숫자를 새어나가기 시작한다. 즉, 0,1,2,3 이런식이다.
 */
+
+/*
+    Organizing Data with Objects
+
+    object와 Array가 다른점은 object는 각 value에 이름을 줄 수 있는 것.
+    만약 우리가 리스트로 내 개인정보를 지니고 있다고 예를 들어보자
+    const youngInfo = ["YoungChul", "31", true, "Osan"];
+    console.log(youngInfo);
+    이면, 여기서 내 이름을 얻기 위해 console.log(youngInfo[0]); 이런식의 접근이 필요하다. 즉, 리스트에 정렬 되어있지 않은 데이터를 내가 꼭 위치를 생각해서 얻어내야하는 불편함이 있다. 
+    만약 그 위치를 까먹게 되면 위치 확인 이후에 데이터를 가져와야 한다.
+    근데 이것은 효율적이지 못하다. 그래서 우리가 소위 말하는 Object를 만들어야 한다.
+
+    object를 선언하기 위해선 리스트 []브라켓과 다른 {}컬리 브라켓을 써주면 된다.
+    object는 실제 객체를 만든다고 알아야한다. 즉, label을 네가 저장하고 싶은 data에 줄 수 있는 것이다.
+    
+    예를들어 
+
+    const youngInfo = {
+        name:"Young",
+        age:31,
+        gender:"Male",
+        isHandsome:true
+    }
+
+    결과 : {name:'Young', age:33, gender:'Male', isHandsome: ture}
+
+    리스트와는 차이가 나는 결과가 나온다. 즉 key와 vlaue!!
+
+    이 youngInfo object를 이용해서 우리는 데이터에 접근하고 바꾸기도 할 수 있다.
+
+    console.log(youngInfo.gender); 해주면 해당 키 값에 들어있는 vlaue 값들을 모조리 가져온다.
+
+    또한 vlaue에 해당하는 값들은 javascript 안에서는 다양하게 바꿀수있다. 보시다시피 const 안에 있는 값을 바꿀 수 있다는 말이다.
+    그러나 youngInfo 자체는 바꿀 수 없다는 걸 명심해야 한다.
+
+    만약 DB에서 가져온 리스트 데이터라면 Array를 선택 해야한다. 
+
+    object안에는 list를 넣어 줄 수 있다.
+
+    const youngInfo = {
+        name:"Young",
+        age:31,
+        gender:"Male",
+        isHandsome:true,
+        favMovies: ["Along the gods", "Lotr", "Oldboy"]
+        favFood: [{name: "Kimchi", fatty: false}, {name: "Cheese burger", fatty: ture }]
+    }
+
+    여기서 우리는 javascript 문법의 규칙을 기억해야한다. 콤마(,)를 빼먹지 말아야한다. 꼭!!! 또한 string 쓸때, "" 앞 뒤에 넣는거 잊지말아야 한다.
+    그리고 꼭 console log를 챙겨보자! 특히 에러가 난다면 그 안에 해답이 존재 한다.
+
+*/
