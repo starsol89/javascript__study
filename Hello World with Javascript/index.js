@@ -215,3 +215,66 @@ console.log('Im Working. Im JS. Im Beautiful. Im worth it');
 
     인자는 내가 만드는 함수 안에서 쓰이고, 무슨 이름이든 법칙은 없다.
 */
+
+/*
+    More Function Fun
+    
+    javascript에서 "",'' 둘다 스트링이며, "" 를 썻으면 끝까지 써줘야하고, '' 도 마찬가지다. 
+
+    우리는 위에서 배운 함수를 좀 더 간편하고 javascript에 걸맞는 방식으로 만들고자 한다.
+
+    function sayHello(name, age) {
+        return 'Hello ${name} you are ${age} years old';
+    }
+
+    sayHello("youngchul", 31);
+
+    const greetYoungchul = sayHello("youngchul", 31)
+
+    console.log(greetYoungchul)
+
+    여기서 우리는 새로운 return을 알게 되었는데 간단히 설명하자면, 내가 돈을 내면 반드시 잔돈을 받아야 하는 그럼 개념이다.
+
+    우리는 함수에 console.log를 쓰는건 프로그래밍 언어에서 적합한 방식이 아니다. 함수 안에서 값은 반환을 해줘야하는 구조이고, return이 이를 담당한다.
+
+    만약에 console.log로 함수에 써준다면 나중에 값을 불러 올때 함수에 한번, 값을 불러올때 한번씩 해서 두번을 사용하는 비효율이 발생한다. 
+
+    그런 것들을 방지하기 위해 javascript의 법칙에 맞게 프로그래밍의 논리에 맞게 return으로 값을 반환해준다. 
+
+    그럼 더 정확히 들어가서 console.log 처럼 우리도 객체와 함수를 새로 정의 할 수 있지 않을까?! 
+    console.log 자체도 하나의 만들어진 내장객체?! 및 함수인데 말이다.
+
+    const calculator = {
+        plus: function(a, b){
+            return a + b;
+        }
+    }
+
+    const plus = calculator.plus(5, 5)
+    console.log(plus)
+
+    결과: 10
+
+    여기서 기억해야할 점은 우리는 새로운 객체 안에 새 함수를 만들어 줄 수 있다는 것이다. 이거 말고도 빼기, 나누기, 나눈 값의 나머지 등등 다양하게 만들 수 있다.
+
+    사칙연산 뿐 아니라 어떠한 동작을 해줄 수 있는 기능도 만들 수 있다.
+
+    const calculator = {
+        plus: function(a, b){
+            return a + b;
+        },
+
+        multiply: function(a, b){
+            return a * b;
+        }
+    }
+
+    const multiply = calculator.multiply(5,5)
+    console.log(multiply)
+
+    결과: 25
+
+    이런식으로 된다.
+
+
+*/
