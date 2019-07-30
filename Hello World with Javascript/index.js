@@ -169,5 +169,49 @@ console.log('Im Working. Im JS. Im Beautiful. Im worth it');
 
     여기서 우리는 javascript 문법의 규칙을 기억해야한다. 콤마(,)를 빼먹지 말아야한다. 꼭!!! 또한 string 쓸때, "" 앞 뒤에 넣는거 잊지말아야 한다.
     그리고 꼭 console log를 챙겨보자! 특히 에러가 난다면 그 안에 해답이 존재 한다.
+*/
 
+/*
+    Function 함수
+
+    우리가 함수를 사용하는 이유는 개발을 하다가 보면 반복적이거나 같은 것을 수시로 사용해야 할때 하나의 기능을 담당하는 함수를 만들어서 처리한다.
+
+    기본적으로 함수를 사용하는 법은
+
+    function -함수이름 (어느것이든 내가 쓰고자하는 이름, 다만 기능에 맞게 지어주면 좋음)-
+    function sayHello() {
+        console.log("Hello");
+    }
+    sayHello();
+
+    하게 되면 우리는 "Hello"를 얻게 된다. 
+
+    여기서 우리는 그냥 Hello 말고 Hello, youngchul!!을 얻고 싶다! 어떤식으로 하면 될까?
+
+    sayHello(", youngchul!!") 이라고 하면 될까? 아니다 ! 실행 되지 않는다. 이유는!?
+
+    받는 인자(argument)가 없기 때문인데 argument(인자)는 변수 같은 것이다. 우리가 주는 값을 저장해준다. 그럼 쓰는법은?!
+
+    첫 함수를 만들때, 
+    function sayHello(argument) 이곳에 넣어주면 된다. 예를들면 
+
+    function sayHello(name) {
+        console.log("Hello", name);
+    }
+
+    sayHello("youngchul!!");
+
+    결과 : "Hellon youngchul!!"
+
+    이런식으로 외부에 있는 데이터를 읽는 함수를 만드는 방법이다. 하나의 인자 뿐 아니라 2개,3개도 가능하다. 즉, 무한하게 가질수있다.
+
+    function sayHello(name, age) {
+        console.log("Hello", name, " My age ", age);
+    }
+
+    sayHello("youngchul!!", 31);
+
+    결과: "Hello youngchul!! My age 31" 이 나오게 된다.
+
+    인자는 내가 만드는 함수 안에서 쓰이고, 무슨 이름이든 법칙은 없다.
 */
