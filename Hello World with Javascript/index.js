@@ -276,5 +276,25 @@ console.log('Im Working. Im JS. Im Beautiful. Im worth it');
 
     이런식으로 된다.
 
+*/
 
+/*
+    JS DOM Function
+    DOM(Document Object Module)
+    Javascript는 내꺼인 html에 있는 요소를 가지고 오며, 그걸 객체로 바꿀 것이다. 좀 더 보태면 html tag를 가져다가 객체로 만들 것이다.
+    console. 이 객체는 저렇게 했을때 점 뒤로 수많은 key를 가지고 있다.
+
+    또한 예를들어 
+    const title = document.getElementById("title");
+    title.innerHTML = "Hi! JS!!"
+
+    라고 했을때 
+
+    HTML에 작성 된
+
+    <h1 id="title">This works!</h1> 이것은 JS에서 작성한 "Hi! JS!!"로 변화 된다.
+
+    이게 바로 Javascript의 힘이고, 우리가 찾게 될 모든 객체들의 함수들 즉, console. 하고 뒤에 나타나는 것들은 DOM(Document Object Module) 형태로 변경 가능하다.
+
+    내 페이지에서 Javascript로 선택한 거는 갹체가 된다.
 */
