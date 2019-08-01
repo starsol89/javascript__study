@@ -298,3 +298,16 @@ console.log('Im Working. Im JS. Im Beautiful. Im worth it');
 
     내 페이지에서 Javascript로 선택한 거는 갹체가 된다.
 */
+
+/*
+    Modifying the DOM with JS
+
+    우리는 JS를 이용해서 DOM을 수정 할 수 있는데, 말 그대로 html,css의 자체를 변경해서 변화를 줄 수 있다. 각각의 객체들을 이용해서 말이다.
+    예를들어서
+
+    const title = document.querySelector(".title"); 하게 된다면 우리는 정의되지 않는 null 값을 받을 것이다.
+
+    그러나 const title = document.querySelector("#title"); 해준다면, 우리는 index.html에 h1에 있는 id 값을 받아 올수있다.
+
+    이 처럼 객체를 이용해서 JS는 값에 접근하고 수정하고 가져오고 다양하게 해 줄 수 있다.
+*/
