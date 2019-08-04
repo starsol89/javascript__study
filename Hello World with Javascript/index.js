@@ -311,3 +311,23 @@ console.log('Im Working. Im JS. Im Beautiful. Im worth it');
 
     이 처럼 객체를 이용해서 JS는 값에 접근하고 수정하고 가져오고 다양하게 해 줄 수 있다.
 */
+
+/*
+    Events and event handlers
+
+    우리가 여짓 공부하면서 작성했던 Javascript는 제대로 쓰여진 javascript는 아니다. 
+    Javascript는 단지 html와 css를 바꾸고 싶어서 만들어지진 않았고, Javascript는 event에 반응하기 위해서 만들어졌다.
+    그러면 event는 무엇일까?
+    웹사이트에서 발생하는 것들을 말하는 것이며, click, resize, submit, input, change, load, before, closing, printing 같은 것들 모두를 뜻한다.
+
+    예를 든 event 하나를 만들자면,
+
+    function handleResize(){
+        console.log("I have been resized");
+    }
+
+    window,addEventListener("resize", handleResize); 해주는데 여기서 handleResize는 내가 필요한 시점에 함수를 호출하는 것이고, handleResize() 해준다면 지금 당장 호출 하라는 것이다.
+    이 두가지는 의미 자체가 다르기 때문에 정말 중요하다.
+
+    즉, handleResiz는 윈도우 창 사이즈가 변화 될때 이벤트가 동작하는 것이고, handleResize()는 윈도우 창이 변화 되지 않아도 이벤트가 동작한 것이다.
+*/
