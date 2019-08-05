@@ -331,3 +331,54 @@ console.log('Im Working. Im JS. Im Beautiful. Im worth it');
 
     즉, handleResiz는 윈도우 창 사이즈가 변화 될때 이벤트가 동작하는 것이고, handleResize()는 윈도우 창이 변화 되지 않아도 이벤트가 동작한 것이다.
 */
+
+/*
+    첫번째 조건문 if, else, and, or
+
+    if 조건은 항상 참이어야 한다. 
+    if (10 === 10) {
+        console.log("hi"); >>> 여기 적은 것을 실행하게 하려면 말이다. 
+    } else if ("10" === "10") {
+        console.log("lalala");
+    } else {
+        console.log("ho"); >>> 단, 참이 아니면 이건 else 블럭으로 간다.
+    }
+    또한 else if를 통해서 더 많은 다른 조건을 가질 수 있다.
+
+    이것뿐아니라, 피연산자라는 것도 있다. 다른 조건들을 합치게 하는 것인데, 
+    if(10-4)를 하는거 대신에 
+
+    if(20>5 && "young" === "young"){    -------> && 이것이 and 이다.
+        console.log('yes');
+    } else{
+        console.log("no");
+    }
+
+    and를 이용해서 yes를 얻고 싶다면 위에 두가지 조건이 모두 참일때 yes가 된다. 반대로 둘 중에 하나라도 거짓이라면 이건 else에 있는 것이 실행된다.
+
+    그리고 and와는 다른 ||(or)도 있다. 
+
+    if(20>5 || "young" === "young"){    -------> || 이것이 or 이다.
+        console.log('yes');
+    } else{
+        console.log("no");
+    }
+
+    or은 둘중 하나라도 참이면 if 문장이 실행되고, 둘다 거짓이라면 else 문장이 실행 된다.
+
+    정리하자면,
+
+    &&는
+    true && true = true
+    true && false = fales
+    fales && true = false
+    false && fales = fales
+
+    ||는
+    true || true = true
+    ture || false = true
+    false || ture = ture
+    false || fales = false 
+
+    기억하자!
+*/
