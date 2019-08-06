@@ -8,12 +8,14 @@
     <link rel="stylesheet" href="index.css">
 </head>
 <body>
-    <h1 id="title" class="clicked">This works!</h1>
     <!-- js 파일은 항상 body 안에 있어야 한다. 그리고 늘 제일 마지막에 추가를 하는 것이다. 
          모든 웹브라우저에는 javascript가 설치되어 있다. 이것은 굉장한 장점인데, 
          java 같은 경우만 봐도 해당 언어를 사용해서 프로그램을 만들면 그 프로그램이 돌아가기 위해선 
          java언어팩 같은걸 다운 받고 동작 시켜야하는데 굉장히 번거로운 일이다.
          그러나 JS는 이미 브라우저랑 같이 구성되어 있기에 위에 처럼 저럴 필요가 전혀 없다. -->
-    <script src="index.js"></script>
+    <div class="js-clock">
+        <h1>00:00</h1>
+    </div>
+    <script src="clock.js"></script>
 </body>
 </html>

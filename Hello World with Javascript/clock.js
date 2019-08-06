@@ -1,4 +1,3 @@
-console.log('Im Working. Im JS. Im Beautiful. Im worth it');
 /* 변수의 사용
    1. Create(생성)
    2. Initialize(초기화)
@@ -491,3 +490,22 @@ console.log('Im Working. Im JS. Im Beautiful. Im worth it');
 
     그럼 여기서 알수있는건 우리가 그전에 만들었던 함수 처럼 toggle도 미리 만들어져있는 것을 우리가 사용한다는걸 알 수 있다.
 */
+
+/*이건 js-clock이라는 class 이름을 찾아 줄것이다. 그리고 clockTitle의 변수는 clockContainer의 자식을 querySelector를 통해서 얻게 된다.*/
+const clockContainer = document.querySelector(".js-clock"),
+clockTitle = clockContainer.querySelector("h1");
+
+//현재 시간을 가져오는 함수
+function getTime(){
+    const date = new Date();
+    const minutes = date.getMinutes();
+    const hours = date.getHours();
+    const seconds = date.getSeconds();
+    clockTitle.innerText = `${hours}:${minutes}:${seconds}`; //html에 작성했던 text에 각각 시간과 분을 대입해준다.
+}
+
+function init(){
+    getTime();
+}
+
+init();
