@@ -430,3 +430,64 @@ console.log('Im Working. Im JS. Im Beautiful. Im worth it');
 
     해주게 된다면 연결 되어있던 인터넷을 끄면, Off가 메세지로 나오고, 다시 켜면 ON으로 나오게 된다.
 */
+
+/*
+    DOM - if else - Function practce part Two
+
+    우리는 위에서 많은 작업을 했지만, 일반적으로 추천하기 좋은 작업은 아니였다. 
+    Javascript에서 css를 가지고 작업을 했는데, 이것은 보편적이지 않는 작업이다.
+    즉, HTML에서는 HTML만 작업하고 CSS에선 CSS 작업을 하며, Javascript에선 로직을 처리하면 되는 것이다.
+
+    const title = document.querySelector("#title");
+
+    const CLICKED_CLASS = "clicked";
+
+    function handleClick() {
+        const hasClass = title.classList.contans(CLICKED_CLASS);
+        if (hasClass) {
+            title.classList.remove(CLICKED_CLASS);
+        } else {
+            title.classList.add(CLICKED_CLASS);
+        }
+    }
+
+    function init() {
+        title.addEventListener("click", handleClick);
+    }
+
+    init();
+
+    우리는 위에서 작성한 contans 라는 객체를 이용해서 value가 존재하는지 체크한다. 446번째 줄에 위치하고있다.
+    446번째 줄은 우리에게 참/거짓을 구별짓게 하는 토대가 될 것이고 이걸 이용해 조건문을 작성해준다.
+    즉, title.classList가 click을 포함하고 있으면 조건은 참이 될 것이다.
+
+    그럼 title.classList.remove(CLICKED_CLASS); 를 실행하게 된다. 
+
+    만약 CLICKED_CLASS를 가지고 있지 않다면,
+    title.classList.add(CLICKED_CLASS); 될 것이다.
+
+    즉, 우리는 이걸 통해 className 하나도 두가지 일을 한다는걸 알 수 있다. classlist.contans를 통해서 말이다. 
+
+    그런데 우리는 저 긴 작업을 하기에 게이른 프로그래머다! 더 쉽고 더 편하게 작업을 하고 싶다!! 간단한 방법을 찾고 싶다!
+
+    toggle라는 함수를 이용해서 우리가 했던 일들을 간단하게 할 수 있다.
+    간단하게 요약 한다고 보면 되겟다.
+
+    const title = document.querySelector("#title");
+
+    const CLICKED_CLASS = "clicked";
+
+    function handleClick() {
+        title.classList.toggle(CLICKED_CLASS);
+    }
+
+    function init() {
+        title.addEventListener("click", handleClick);
+    }
+
+    init();
+
+    다시 한번 강조하지만, title.classList.toggle(CLICKED_CLASS);는 클라스가 거기 있는지 체크해서 거기 있으면 add 아니면 remove를 해주는 걸 말한다.
+
+    그럼 여기서 알수있는건 우리가 그전에 만들었던 함수 처럼 toggle도 미리 만들어져있는 것을 우리가 사용한다는걸 알 수 있다.
+*/
