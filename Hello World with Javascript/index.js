@@ -382,3 +382,51 @@ console.log('Im Working. Im JS. Im Beautiful. Im worth it');
 
     기억하자!
 */
+
+/*
+    DOM if else Function practice
+
+    const title = document.querySelector("#title");
+
+    const BASE_COLOR = "rgb(52, 73, 94)";
+    const OTHER_COLOR = "#7f8c8d";
+
+    function handleClick() {
+        const currentColor = title.style.color;
+        if (currentColor === BASE_COLOR) {
+            title.style.color = OTHER_COLOR;
+        } else {
+            title.style.color = BASE_COLOR;
+        }
+    }
+
+    function init() {
+        title.style.color = BASE_COLOR;
+        title.addEventListener("click", handleClick);
+    }
+
+    init()
+
+    두개의 변수를 이용해서 우리는 클릭 시 참 일시, BASE_COLOR에서 OTHER_COLOR로 변화 되게 되고, 다시 클릭 시 OTHER_COLOR에서 BASE_COLOR로 변화 되게 된다. 
+
+    이 조건을 충족 시키는 Function(함수)는 handleClick()이다.
+
+    그리고 클릭 동작을 인식하는 함수는 init()이다. 
+
+    정리하자면 사용자가 타이틀을 클릭 할 시 먼저 init()함수로 들어가서 handleClick을 인식하고 그 함수로 가서 함수 속 조건들을 검토하고 실행하게 된다.
+
+    좀 더 재밌는걸 해보자면, 
+
+    function handleOffline() {
+        console.log("Off");
+    }
+
+    function handleOnline() {
+        console.log("ON");
+    }
+
+    window.addEventListener("offline", handleOffline);
+    window.addEventListener("online", handleOnline);
+
+    해주게 된다면 연결 되어있던 인터넷을 끄면, Off가 메세지로 나오고, 다시 켜면 ON으로 나오게 된다.
+*/
