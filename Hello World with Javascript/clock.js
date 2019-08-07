@@ -501,11 +501,18 @@ function getTime(){
     const minutes = date.getMinutes();
     const hours = date.getHours();
     const seconds = date.getSeconds();
-    clockTitle.innerText = `${hours}:${minutes}:${seconds}`; //html에 작성했던 text에 각각 시간과 분을 대입해준다.
+
+    //html에 작성했던 text에 각각 시간과 분을 대입해준다.
+    clockTitle.innerText = `${hours < 10 ? `0${hours}` : hours}:${minutes < 10 ? `0${minutes}` : minutes}:${seconds < 10 ? `0${seconds}` : seconds}`;
+    /* 정리하자면, 만약 시가 10보다 작으면, 0과 시를 리턴하고(`0${hours}`), 그렇지 않으면 0을 떼고 시만 리턴한다(: hours).
+    hours < 10 ? `0${hours}` : hours (10보다 작으면, ? 물음표는 if 처럼 동작함 즉, 질문이다. 질문이 참이라면 `0${hours}` 부분을 실행하고, 그게 거짓이라면 : hours 동작 된다.)
+    그래서 작은 if 라고도 한다.
+    */
 }
 
 function init(){
     getTime();
+    setInterval(getTime, 1000); //setInterval 이 함수는 두 인자값(argument)을 받는데, 첫번째 인자는 실행 할 함수를, 두번째 인자는 실행할 시간 간격이다.
 }
-
+//init() 함수의 동작은 결국 시간을 실시간으로 움직이게 보여주게 된다. setInterval 함수에서 얻은 시간을 갖고 시계 부분 html을 변경 시키기 때문이다.
 init();
