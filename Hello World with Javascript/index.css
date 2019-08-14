@@ -9,8 +9,22 @@ body {
 
 }
 
+h1 {
+    color: #48c9b0;
+}
+
+li {
+    color: #48c9b0;
+    font-weight: bold;
+}
+
 .btn {
     cursor: pointer;
+}
+
+.js-weather {
+    color: #48c9b0;
+    font-weight: bold;
 }
 
 .clicked {
@@ -20,6 +34,7 @@ body {
 .form,
 .greetings {
     display: none;
+    color: #48c9b0;
 }
 
 .showing {
